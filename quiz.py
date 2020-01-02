@@ -15,4 +15,3 @@ def sumOfNum(nums):
     else:
         return "Invalid input"
 print(sumOfNum([1,5,-3,5,9,8,4]))
-input()
