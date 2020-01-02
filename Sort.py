@@ -8,5 +8,3 @@ for i in range(len(a)):
     a[i], a[low] = a[low], a[i]
 
 print(a)
-
-input()
