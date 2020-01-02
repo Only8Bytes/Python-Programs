@@ -1,22 +1,7 @@
-############################################################
-# CMPSC 442: Homework 5
-############################################################
-
-student_name = "Andrew Lazar"
-
-############################################################
-# Imports
-############################################################
-
-# Include your imports here, if any are used.
 import string
 import re
 import random
 import math
-
-############################################################
-# Section 1: Markov Models
-############################################################
 
 def tokenize(text):
     punct = r'[\s{}]'.format(re.escape(string.punctuation))
@@ -109,20 +94,3 @@ def create_ngram_model(n, path):
     for line in txtfile.readlines():
         model.update(line)
     return model
-
-############################################################
-# Section 2: Feedback
-############################################################
-
-feedback_question_1 = """
-5 hours
-"""
-
-feedback_question_2 = """
-Perplexity tripped me up because of the logs and so did the regular expression functions used for tokenizing
-"""
-
-feedback_question_3 = """
-I liked how it had real life applications rather than being some abstract problem that doesn't apply to real life.
-I wouldn't change much but maybe add a hint to use re functions for tokenization.
-"""
