@@ -1,14 +1,3 @@
-############################################################
-# CMPSC442: Homework 4
-############################################################
-
-student_name = "Andrew Lazar"
-
-############################################################
-# Imports
-############################################################
-
-# Include your imports here, if any are used.
 import email
 import math
 import collections
@@ -91,19 +80,3 @@ class SpamFilter(object):
 
     def most_indicative_ham(self, n):
         return self.getIndicativeValues(False, n)
-
-############################################################
-# Section 2: Feedback
-############################################################
-
-feedback_question_1 = """
-6 hours
-"""
-
-feedback_question_2 = """
-the classify function was difficult but that's because I forgot log properties so I spent a while figuring out what I was doing wrong
-"""
-
-feedback_question_3 = """
-implementing probability into code was an interesting challenge
-"""
