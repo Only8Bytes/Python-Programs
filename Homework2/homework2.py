@@ -1,17 +1,5 @@
-############################################################
-# CMPSC 442: Homework 2
-############################################################
-
-student_name = "Andrew Lazar"
-
-############################################################
-# Imports
-############################################################
 import random
 import math
-# Include your imports here, if any are used.
-
-
 
 ############################################################
 # Section 1: N-Queens
@@ -310,19 +298,3 @@ def solve_distinct_disks(length, n):
                         copyNode.PreviousNode = (currentNode, (i, i - 1))
 
     return BFS(create_puzzle(length, n))
-
-############################################################
-# Section 4: Feedback
-############################################################
-
-feedback_question_1 = """
-15 hours
-"""
-
-feedback_question_2 = """
-The DFS for the N Queens solution was very difficult for me to get right, lots of small things kept tripping me up.
-"""
-
-feedback_question_3 = """
-The use of both DFS and BFS was helpful. Only thing I would have changed is that part 3 is almost identical to part 2 in the way that it functions.
-"""
