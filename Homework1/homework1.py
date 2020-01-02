@@ -1,33 +1,4 @@
 ############################################################
-# CMPSC 442: Homework 1
-############################################################
-
-student_name = "Andrew Lazar"
-
-############################################################
-# Section 1: Python Concepts
-############################################################
-
-python_concepts_question_1 = """
-Python is dynamically typed as variables are not bound to a single type, Python only cares that the type it expects is the one it receives at runtime.
-Ptyhon also keeps track of all variables and variable types in the interpreter, so it is considered strongly typed.
-Strongly typed example: In Python you cannot concatenate strings with other data types using "+" so "'hello' + 4" will return an error instead of "hello4" as "hello" is a string and 4 is an integer.
-Dynamically typed example: In Python you can reassign a variable to be a different type than it was before, such as:
-x = "hello"
-x = 4
-which would not throw an error as Python is dynamically typed
-"""
-
-python_concepts_question_2 = """
-The keys in the dictionary are lists, which are unhashable and therefore not acceptable as keys. To solve this, set the keys to be a tuple pair:
-points_to_names ={(0,0):"home",(1,2):"school",(-1,1):"market"}
-"""
-
-python_concepts_question_3 = """
-Option 2, using .join, is quicker as it is a built-in function in Python which means it executes as C code rather than bytecode like the first option would
-"""
-
-############################################################
 # Section 2: Working with Lists
 ############################################################
 
@@ -190,24 +161,3 @@ class Polynomial(object):
                 if x[1] != 1:
                     polyReadable = polyReadable + "^" + str(x[1])
         return polyReadable
-
-############################################################
-# Section 7: Feedback
-############################################################
-
-feedback_question_1 = """
-~4 hours
-"""
-
-feedback_question_2 = """
-The most difficult part was remembering the specifics of some of the functions and methods with
-lists and other data types but that was quickly remedied with a bit of practice. It's been a while
-since I coded in Python, so obviously I am going to be a bit rusty.
-"""
-
-feedback_question_3 = """
-I wouldn't say there was anything I particularly enjoyed doing in this assignment, but I did
-enjoy having a nice warm-up and practice exercises with Python before getting into the main
-course material which would have proven to be much more challenging without any practice.
-There's not much I would change since it has good exercises and is explained quite plainly.
-"""
